@@ -17,6 +17,13 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-06-30',
 
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabasePublishableKey: process.env.SUPABASE_PUBLISHABLE_KEY,
+    },
+  },
+
   eslint: {
     config: {
       stylistic: {
